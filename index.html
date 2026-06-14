@@ -1,0 +1,400 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Canal Fashion | Moda Feminina Contemporânea</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+color:#333;
+background:#fff;
+}
+
+header{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('https://images.unsplash.com/photo-1483985988355-763728e1935b');
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 0;
+}
+
+.logo{
+font-size:34px;
+font-weight:700;
+letter-spacing:4px;
+font-family:'Playfair Display',serif;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#c79a63;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#b5874f;
+}
+
+.hero{
+height:85vh;
+display:flex;
+align-items:center;
+}
+
+.hero-content{
+max-width:650px;
+}
+
+.hero h1{
+font-size:4rem;
+line-height:1.1;
+margin-bottom:20px;
+font-family:'Playfair Display',serif;
+}
+
+.hero p{
+font-size:1.2rem;
+margin-bottom:30px;
+}
+
+section{
+padding:90px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:2.8rem;
+font-family:'Playfair Display',serif;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+padding:35px;
+background:#fff;
+border-radius:16px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#c79a63;
+}
+
+.about{
+background:#f8f8f8;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:40px;
+}
+
+.stat{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:12px;
+}
+
+.stat h3{
+font-size:2rem;
+color:#c79a63;
+}
+
+.contact{
+background:#222;
+color:white;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+
+input,
+textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:8px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+<div class="logo">CANAL</div>
+<a href="#contato" class="btn">Fale Conosco</a>
+</nav>
+
+<div class="hero">
+
+<div class="hero-content">
+
+<h1>Moda Feminina com Elegância e Personalidade</h1>
+
+<p>
+Coleções desenvolvidas para mulheres que valorizam estilo, qualidade e autenticidade em cada detalhe.
+</p>
+
+<a href="#contato" class="btn">Conheça a Marca</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+<h2>Nossas Coleções</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Moda Casual</h3>
+<p>Peças versáteis para o dia a dia com conforto e sofisticação.</p>
+</div>
+
+<div class="card">
+<h3>Moda Executiva</h3>
+<p>Modelagens elegantes para ambientes profissionais modernos.</p>
+</div>
+
+<div class="card">
+<h3>Coleções Exclusivas</h3>
+<p>Tendências contemporâneas com acabamento premium.</p>
+</div>
+
+<div class="card">
+<h3>Acessórios</h3>
+<p>Complementos que valorizam o estilo feminino.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Sobre a Empresa</h2>
+</div>
+
+<p style="text-align:center;max-width:900px;margin:auto;">
+A NRB Fashion Company atua no segmento de moda feminina, desenvolvendo coleções que combinam design contemporâneo, qualidade e estilo. A empresa busca oferecer produtos alinhados às tendências do mercado e às necessidades de suas clientes.
+</p>
+
+<div class="stats">
+
+<div class="stat">
+<h3>2020</h3>
+<p>Início da Filial</p>
+</div>
+
+<div class="stat">
+<h3>Ativa</h3>
+<p>Situação Cadastral</p>
+</div>
+
+<div class="stat">
+<h3>R$ 271 mil</h3>
+<p>Capital Social</p>
+</div>
+
+<div class="stat">
+<h3>Moda</h3>
+<p>Segmento</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+<h2>Informações Corporativas</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Razão Social</h3>
+<p>NRB Fashion Company LTDA</p>
+</div>
+
+<div class="card">
+<h3>CNPJ</h3>
+<p>39.269.713/0004-33</p>
+</div>
+
+<div class="card">
+<h3>Natureza Jurídica</h3>
+<p>Sociedade Empresária Limitada</p>
+</div>
+
+<div class="card">
+<h3>Situação</h3>
+<p>Ativa</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contato" class="contact">
+
+<div class="container">
+
+<div class="section-title">
+<h2 style="color:white;">Contato</h2>
+</div>
+
+<div class="contact-grid">
+
+<div>
+
+<p><strong>E-mail:</strong> deide@canal.com.br</p>
+
+<p><strong>Telefone:</strong> (11) 2606-0626</p>
+
+<br>
+
+<h3>Endereço</h3>
+
+<p>
+Avenida Tamboré, 1043 – Sala 1<br>
+Tamboré<br>
+Barueri – SP<br>
+CEP: 06460-000
+</p>
+
+</div>
+
+<div>
+
+<form>
+
+<input type="text" placeholder="Nome">
+
+<input type="email" placeholder="E-mail">
+
+<input type="tel" placeholder="Telefone">
+
+<textarea rows="5" placeholder="Mensagem"></textarea>
+
+<button class="btn" type="submit">
+Enviar Mensagem
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>NRB Fashion Company LTDA</p>
+<p>CNPJ: 39.269.713/0004-33</p>
+<p>© 2026 Todos os Direitos Reservados</p>
+
+</footer>
+
+</body>
+</html>
+```
